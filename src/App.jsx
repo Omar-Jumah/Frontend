@@ -1,5 +1,5 @@
 import AuthPage from "./pages/AuthPage";
-import Background from "./components/Background";
+import Background from "./components/Background/Background";
 import "./App.css";
 
 function App() {

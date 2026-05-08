@@ -1,0 +1,119 @@
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.authForm h2 {
+  margin: 0 0 2px;
+  font-size: 34px;
+  font-weight: 800;
+  color: white;
+  text-align: right;
+}
+
+.doubleFields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  color: rgba(196, 205, 235, 0.78);
+  font-size: 12px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.field input {
+  height: 42px;
+  border-radius: 10px;
+  border: 1px solid rgba(120, 145, 210, 0.14);
+  background: linear-gradient(
+    180deg,
+    rgba(18, 29, 59, 0.96),
+    rgba(13, 23, 45, 0.96)
+  );
+  color: white;
+  padding: 0 14px;
+  outline: none;
+  font-size: 13px;
+}
+
+.field input::placeholder {
+  color: rgba(200, 210, 240, 0.28);
+}
+
+.forgotRow {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -4px;
+  margin-bottom: 2px;
+}
+
+.forgotRow a {
+  color: #7da6ff;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.forgotRow a:hover {
+  text-decoration: underline;
+}
+
+.mainBtn {
+  height: 44px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #5f92ff, #4778f2);
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  box-shadow:
+    0 0 18px rgba(71, 120, 242, 0.24),
+    inset 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+.switchText {
+  text-align: center;
+  margin: 0;
+  color: rgba(190, 205, 245, 0.45);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.switchText button {
+  border: none;
+  background: transparent;
+  color: #7da6ff;
+  font-weight: 800;
+  cursor: pointer;
+  margin-right: 6px;
+  font-size: 13px;
+}
+
+@media (max-width: 700px) {
+  .doubleFields {
+    grid-template-columns: 1fr;
+  }
+
+  .authForm h2 {
+    font-size: 30px;
+  }
+
+  .field input {
+    height: 40px;
+  }
+
+  .mainBtn {
+    height: 42px;
+    font-size: 16px;
+  }
+}

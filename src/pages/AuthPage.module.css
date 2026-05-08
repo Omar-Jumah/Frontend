@@ -1,0 +1,59 @@
+.authPage {
+  min-height: 100vh;
+  color: white;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px;
+  position: relative;
+  z-index: 2;
+}
+
+.authCard {
+  width: 920px;
+  max-width: 100%;
+  min-height: 460px;
+  display: grid;
+  grid-template-columns: 1fr 0.92fr;
+  gap: 30px;
+  align-items: center;
+  direction: ltr;
+}
+
+.formSide {
+  direction: rtl;
+  order: 1;
+}
+
+@media (max-width: 1100px) {
+  .authCard {
+    width: 920px;
+    grid-template-columns: 1fr 0.92fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .authPage {
+    align-items: flex-start;
+    padding: 24px 18px;
+  }
+
+  .authCard {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .formSide {
+    order: 1;
+  }
+}
+
+@media (max-width: 700px) {
+  .authPage {
+    padding: 20px 16px;
+  }
+}
