@@ -1,0 +1,126 @@
+.card {
+  flex: 1;
+  min-height: 118px;
+  border-radius: var(--radius-lg);
+  padding: 22px 24px;
+  position: relative;
+  overflow: hidden;
+  text-align: right;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: 0.25s ease;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.98),
+    rgba(248,250,252,0.94)
+  );
+  backdrop-filter: var(--glass);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(30,80,162,0.16);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(30,80,162,0.07), transparent 34%),
+    linear-gradient(135deg, transparent, rgba(255,107,107,0.045));
+}
+
+/* ================= Card Variants ================= */
+
+.circle {
+  background:
+    radial-gradient(circle at 18% 25%, rgba(30,80,162,0.10), transparent 28%),
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.98),
+      rgba(246,249,255,0.94)
+    );
+}
+
+.wave {
+  background:
+    radial-gradient(circle at 80% 75%, rgba(255,107,107,0.10), transparent 28%),
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.98),
+      rgba(248,250,252,0.94)
+    );
+}
+
+.line {
+  background:
+    radial-gradient(circle at 20% 25%, rgba(30,80,162,0.08), transparent 26%),
+    radial-gradient(circle at 75% 80%, rgba(255,107,107,0.08), transparent 28%),
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.98),
+      rgba(248,250,252,0.94)
+    );
+}
+
+/* ================= Text ================= */
+
+.title {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.value {
+  color: var(--text);
+  font-size: 34px;
+  margin: 10px 0 0;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.extra {
+  color: var(--accent);
+  font-size: 15px;
+  margin: 6px 0 0;
+  font-weight: 700;
+}
+
+/* ================= Charts ================= */
+
+.circleChart {
+  position: absolute;
+  bottom: 18px;
+  left: 24px;
+}
+
+.chartArea {
+  position: absolute;
+  bottom: 16px;
+  left: 18px;
+  right: 18px;
+  height: 45px;
+}
+
+.svgFull {
+  width: 100%;
+  height: 100%;
+}
+
+/* ================= Glow Effects ================= */
+
+.cyanGlow {
+  filter: drop-shadow(0 0 6px rgba(30,80,162,0.25));
+}
+
+.waveGlow {
+  filter: drop-shadow(0 0 6px rgba(255,107,107,0.22));
+}
+
+.greenGlow {
+  filter: drop-shadow(0 0 6px rgba(39,174,96,0.22));
+}
