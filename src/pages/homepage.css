@@ -1,0 +1,14 @@
+.App {
+    min-height: 100vh;
+    direction: rtl;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-container {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
+    padding: 118px 0 var(--space-xl);
+    position: relative;
+    z-index: 1;
+}
