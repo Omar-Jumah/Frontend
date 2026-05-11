@@ -1,59 +1,49 @@
 .authPage {
   min-height: 100vh;
-  color: white;
-  font-family: "Cairo", sans-serif;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
   direction: rtl;
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 16px 28px;
-  position: relative;
-  z-index: 2;
+  justify-content: center;
+  padding: 18px;
+  overflow: hidden;
 }
 
 .authCard {
-  width: 920px;
-  max-width: 100%;
-  min-height: 460px;
+  width: 820px;
+  height: 540px;
   display: grid;
-  grid-template-columns: 1fr 0.92fr;
-  gap: 30px;
-  align-items: center;
-  direction: ltr;
+  grid-template-columns: 1fr 0.86fr;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(30, 80, 162, 0.08);
+  border-radius: 18px;
+  box-shadow: 0 22px 68px rgba(30, 80, 162, 0.08);
+  overflow: hidden;
 }
 
 .formSide {
   direction: rtl;
-  order: 1;
+  background: #fff;
+  padding: 28px 28px 34px;
+  border-left: 1px solid rgba(30, 80, 162, 0.08);
 }
 
-@media (max-width: 1100px) {
-  .authCard {
-    width: 920px;
-    grid-template-columns: 1fr 0.92fr;
-    gap: 30px;
-  }
-}
-
-@media (max-width: 900px) {
+@media (max-width: 860px) {
   .authPage {
-    align-items: flex-start;
-    padding: 24px 18px;
+    height: auto;
+    min-height: 100vh;
+    overflow: auto;
   }
 
   .authCard {
-    width: 100%;
+    width: min(100%, 500px);
+    height: auto;
     grid-template-columns: 1fr;
-    gap: 34px;
   }
 
   .formSide {
-    order: 1;
-  }
-}
-
-@media (max-width: 700px) {
-  .authPage {
-    padding: 20px 16px;
+    border-left: none;
   }
 }

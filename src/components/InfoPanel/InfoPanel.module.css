@@ -1,45 +1,41 @@
 .infoSide {
   direction: rtl;
-  order: 2;
-  padding: 20px 0 20px 20px;
+  padding: 58px 38px 30px;
   position: relative;
+  background:
+    radial-gradient(circle at 10% 8%, rgba(255, 107, 107, 0.09), transparent 30%),
+    radial-gradient(circle at 80% 15%, rgba(30, 80, 162, 0.08), transparent 34%),
+    #f8fbff;
 }
 
 .miniBrand {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  color: white;
+  width: max-content;
+  background: rgba(255, 107, 107, 0.13);
+  color: #ff6b6b;
   font-weight: 800;
-  font-size: 16px;
-  margin-bottom: 22px;
+  font-size: 11px;
+  padding: 7px 12px;
+  border-radius: 5px;
+  margin-bottom: 18px;
 }
 
 .spark {
-  width: 30px;
-  height: 30px;
-  border-radius: 9px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(180deg, #6996ff, #4171f2);
-  box-shadow: 0 0 16px rgba(65, 113, 242, 0.35);
-  font-size: 13px;
+  display: none;
 }
 
 .infoSide h1 {
-  margin: 0 0 10px;
-  font-size: 42px;
-  line-height: 1.08;
-  font-weight: 800;
-  color: white;
+  margin: 0 0 12px;
+  font-size: 34px;
+  line-height: 1.18;
+  font-weight: 900;
+  color: #111827;
 }
 
 .infoSide p {
-  margin: 0 0 22px;
-  color: rgba(190, 205, 245, 0.42);
+  margin: 0 0 20px;
+  color: #6b7280;
   font-size: 13px;
-  line-height: 1.8;
+  line-height: 1.7;
 }
 
 .infoSide ul {
@@ -51,63 +47,25 @@
 .infoSide li {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  color: rgba(230, 237, 255, 0.88);
-  font-size: 15px;
-  margin-bottom: 14px;
+  gap: 8px;
+  color: #172033;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 11px;
 }
 
 .infoSide li span {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background: rgba(19, 109, 74, 0.25);
-  border: 1px solid rgba(52, 184, 116, 0.25);
-  color: #6ef2a8;
+  width: 19px;
+  height: 19px;
+  border-radius: 5px;
+  background: rgba(30, 80, 162, 0.08);
+  color: #1e50a2;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
-  flex-shrink: 0;
+  font-size: 10px;
 }
 
 .infoGlow {
-  position: absolute;
-  left: 70px;
-  bottom: 10px;
-  width: 130px;
-  height: 130px;
-  background: radial-gradient(circle, rgba(67, 120, 255, 0.25), transparent 68%);
-  filter: blur(24px);
-  pointer-events: none;
-}
-
-@media (max-width: 900px) {
-  .infoSide {
-    order: 2;
-    padding: 10px 0;
-  }
-
-  .infoSide h1 {
-    font-size: 36px;
-  }
-
-  .infoSide li {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 700px) {
-  .infoSide h1 {
-    font-size: 32px;
-  }
-
-  .infoSide p {
-    font-size: 13px;
-  }
-
-  .infoSide li {
-    font-size: 13px;
-  }
+  display: none;
 }

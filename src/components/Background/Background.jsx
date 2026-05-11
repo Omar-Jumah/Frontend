@@ -2,13 +2,13 @@ import styles from "./Background.module.css";
 
 function Background({ children }) {
   return (
-    <div className={styles.appBackground}>
-      <div className={`${styles.backgroundGlow} ${styles.glowOne}`}></div>
-      <div className={`${styles.backgroundGlow} ${styles.glowTwo}`}></div>
-      <div className={`${styles.backgroundGlow} ${styles.glowThree}`}></div>
+    <>
+      <div className={styles.wrapper}>
+        <div className={styles.overlay}></div>
+      </div>
 
       {children}
-    </div>
+    </>
   );
 }
 

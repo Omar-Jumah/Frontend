@@ -1,43 +1,14 @@
-.appBackground {
-  min-height: 100vh;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 50% 35%, rgba(36, 95, 190, 0.16), transparent 28%),
-    radial-gradient(circle at 15% 20%, rgba(0, 100, 255, 0.08), transparent 20%),
-    radial-gradient(circle at 85% 60%, rgba(0, 120, 255, 0.08), transparent 18%),
-    linear-gradient(180deg, #030817 0%, #010612 100%);
-}
-
-.backgroundGlow {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(55px);
+.wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
   pointer-events: none;
-  opacity: 0.45;
+  background:
+    radial-gradient(circle at 14% 18%, rgba(255, 107, 107, 0.14), transparent 26%),
+    radial-gradient(circle at 86% 15%, rgba(30, 80, 162, 0.10), transparent 28%),
+    linear-gradient(180deg, #ffffff 0%, #f8fbff 55%, #ffffff 100%);
 }
 
-.glowOne {
-  width: 250px;
-  height: 250px;
-  top: 12%;
-  left: 20%;
-  background: rgba(44, 102, 238, 0.24);
-}
-
-.glowTwo {
-  width: 280px;
-  height: 280px;
-  bottom: 8%;
-  right: 18%;
-  background: rgba(0, 190, 255, 0.14);
-}
-
-.glowThree {
-  width: 200px;
-  height: 200px;
-  top: 35%;
-  right: 42%;
-  background: rgba(80, 120, 255, 0.1);
+.overlay {
+  display: none;
 }
