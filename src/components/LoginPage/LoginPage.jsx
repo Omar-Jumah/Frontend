@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Background from "../Background/Background";
-import AuthTabs from "../AuthTabs/AuthTabs";
-import AuthForm from "../AuthForm/AuthForm";
-import InfoPanel from "../InfoPanel/InfoPanel";
+import Background from "./Background/Background";
+import AuthTabs from "./AuthTabs/AuthTabs";
+import AuthForm from "./AuthForm/AuthForm";
+import InfoPanel from "./InfoPanel/InfoPanel";
 import styles from "./LoginPage.module.css";
 
 function LoginPage() {

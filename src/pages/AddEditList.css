@@ -1,0 +1,154 @@
+.glassCard { 
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(58, 112, 199, 0.1);
+  border-radius: 24px;
+  backdrop-filter: blur(16px);
+  box-shadow:0 12px 30px rgba(34, 62, 129, 0.06);
+  position: relative;
+  overflow: hidden;
+  transition: 0.25s ease;
+}
+.glassCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(35, 54, 98, 0.08);
+}
+.glassCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 85% 10%, rgba(30, 80, 162, 0.06), transparent 40%),
+    radial-gradient(circle at 12% 20%, rgba(255, 107, 107, 0.05), transparent 35%);
+  pointer-events: none;
+}
+
+.glow {
+  box-shadow:
+    0 12px 30px rgba(32, 77, 149, 0.08);
+}
+
+.uploadBox {
+  height: 300px;
+  border: 2px dashed rgba(30, 80, 162, 0.18);
+  border-radius: 20px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  transition: 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.uploadBox:hover {
+  border-color: rgba(30, 80, 162, 0.35);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(30, 80, 162, 0.08);
+}
+
+.neonBtn {
+  background: #1e50a2;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  transition: 0.25s ease;
+  box-shadow: 0 10px 20px rgba(30, 80, 162, 0.18);
+}
+.neonBtn:hover {
+  background: #2f6fe4;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(30, 80, 162, 0.22);
+}
+
+.switchBox {
+  background: rgba(30, 80, 162, 0.06);
+  border: 1px solid rgba(30, 80, 162, 0.10);
+  color: #182b56;
+}
+
+.uploadLink {
+  cursor: pointer;
+  color: #2a5591;
+  transition: 0.2s ease;
+}
+.uploadLink:hover {
+  color: #1e50a2;
+}
+
+body {
+  background: linear-gradient(180deg, #fff 0%, #f8fbff 52%, #fff 100%);
+  color: #1b2d58;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image:
+    linear-gradient(rgba(30, 80, 162, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 80, 162, 0.03) 1px, transparent 1px);
+
+  background-size: 44px 44px;
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
+}
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 80% 16%, rgba(30, 80, 162, 0.10), transparent 32%),
+    radial-gradient(circle at 12% 20%, rgba(255, 107, 107, 0.08), transparent 30%);
+  pointer-events: none;
+}
+
+.form-control,
+.form-select {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(30, 80, 162, 0.12);
+  color: #0f172a !important;
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  transition: 0.2s ease;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba(30, 80, 162, 0.35);
+  box-shadow: 0 0 0 4px rgba(30, 80, 162, 0.08);
+  outline: none;
+}
+.form-control::placeholder {
+  color: #214475;
+}
+
+.bi-camera {
+  color: #1e50a2;
+  text-shadow: 0 0 20px rgba(30, 80, 162, 0.15);
+}
+
+.btn-outline-light {
+  background: #1e50a2 !important;
+  border-color: #1e50a2 !important;
+  color: #fff !important;
+}
+.btn-outline-light:hover {
+  background: #2f6fe4 !important;
+  border-color: #2f6fe4 !important;
+}
+
+.btn-outline-light.w-100,
+.btn-success {
+  background: #1e50a2 !important;
+  border-color: #1e50a2 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+}
+.btn-outline-light.w-100:hover,
+.btn-success:hover {
+  background: #2f6fe4 !important;
+  border-color: #2f6fe4 !important;
+}
+.glassCard .text-white {
+  color: #0f172a !important;
+}

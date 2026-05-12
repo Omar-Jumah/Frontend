@@ -46,7 +46,7 @@ export default function Dashboard() {
           name: "لوحة التحكم",
           icon: "▦",
           active: true,
-          action: () => navigate("/"),
+          action: () => navigate("/dashboard"),
         },
         {
           name: "منتجاتي",

@@ -1,10 +1,19 @@
+import { useNavigate } from "react-router-dom";
 import styles from "./AuthForm.module.css";
 
 function AuthForm({ activeForm, onChangeForm }) {
+    const navigate = useNavigate();
     const isLogin = activeForm === "login";
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        localStorage.setItem("isLoggedIn", "true");
+        navigate("/dashboard");
+    };
+
     return (
-        <form className={styles.authForm}>
+        <form className={styles.authForm} onSubmit={handleSubmit}>
             <h2>{isLogin ? "تسجيل الدخول" : "إنشاء حساب"}</h2>
 
             {!isLogin && (
