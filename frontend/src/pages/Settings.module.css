@@ -1,0 +1,159 @@
+.page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 30px;
+  direction: rtl;
+  font-family: "Tajawal", sans-serif;
+}
+
+.container {
+  width: min(1150px, 100%);
+  margin: auto;
+}
+
+.header {
+  background:
+    radial-gradient(circle at top left, rgba(255, 107, 138, 0.08), transparent 25%),
+    radial-gradient(circle at top right, rgba(49, 87, 214, 0.08), transparent 30%),
+    #ffffff;
+
+  border: 1px solid #dfe6f3;
+  border-radius: 28px;
+  padding: 30px;
+  margin-bottom: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header span {
+  color: #3157d6;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header h1 {
+  font-size: 42px;
+  margin: 10px 0;
+  color: #111827;
+}
+
+.header p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.backBtn {
+  border: 1px solid #dfe6f3;
+  background: white;
+  color: #3157d6;
+  padding: 12px 18px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 800;
+  transition: 0.2s ease;
+}
+
+.backBtn:hover {
+  background: #3157d6;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #dfe6f3;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 18px 40px rgba(30, 80, 162, 0.05);
+}
+
+.card h3 {
+  font-size: 24px;
+  color: #111827;
+  margin-bottom: 22px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.item span {
+  color: #6b7280;
+}
+
+.item strong {
+  color: #111827;
+}
+
+.toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.toggle span {
+  color: #111827;
+  font-weight: 600;
+}
+
+.toggle input {
+  width: 20px;
+  height: 20px;
+}
+
+.plan {
+  margin-bottom: 20px;
+}
+
+.plan strong {
+  display: block;
+  font-size: 24px;
+  color: #3157d6;
+  margin-bottom: 8px;
+}
+
+.plan span {
+  color: #6b7280;
+}
+
+.card button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #3157d6, #7c4dff);
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.card button:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .header h1 {
+    font-size: 34px;
+  }
+}
